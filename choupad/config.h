@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x0000
+#define VENDOR_ID       0x8144
+#define PRODUCT_ID      0x19c8
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    chou
 #define PRODUCT         ChouPad
@@ -81,9 +81,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
+#define VIAL_KEYBOARD_UID {0xED, 0x8B, 0xEB, 0x62, 0xFE, 0x8E, 0x87, 0x55}
 
 
-#define ENCODERS_PAD_A { B1 }
-#define ENCODERS_PAD_B { B2 }
+#define ENCODERS_PAD_A { B2 }
+#define ENCODERS_PAD_B { B1 }
 #define ENCODER_RESOLUTION 4
 #define FORCE_NKRO
+
+#define TAPPING_TERM      175
